@@ -9,4 +9,5 @@ terraform {
 provider "aws" {
   region                   = "eu-west-1"
   shared_credentials_files = ["${path.module}/creds.ini"]
+  profile                  = "default"
 }
